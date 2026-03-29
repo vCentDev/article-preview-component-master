@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+
+  <body class="text--preset-2">
+    <main class="page-wrapper">
+      <article class="card">
+        <img
+          class="card__image"
+          src="./images/drawers.jpg"
+          alt="Green drawers with a decorative vase"
+        />
+
+        <div class="card__content">
+          <div class="card__text-block">
+            <h1 class="card__title text--preset-1">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="card__description">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+
+          <footer class="card__footer">
+            <div class="card__profile">
+              <img
+                class="card__profile-avatar"
+                src="./images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+              />
+              <address class="card__profile-data">
+                <p class="card__profile-name text--preset-2-bold">
+                  Michelle Appleton
+                </p>
+                <p class="card__profile-date">
+                  <time datetime="2020-06-28">28 Jun 2020</time>
+                </p>
+              </address>
+            </div>
+            <button
+              type="button"
+              class="card__share-toggle"
+              aria-label="Share article"
+              aria-controls="share-toast"
+              aria-expanded="false"
+            >
+              <img
+                class="card__share-icon"
+                src="./images/icon-share.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
+
+            <!-- SHARE TOAST -->
+            <section
+              id="share-toast"
+              class="card__share-popover"
+              aria-label="Share options"
+            >
+              <div class="card__share-popover-content">
+                <div class="card__share-popover-main">
+                  <span class="card__share-popover-label">SHARE</span>
+                  <ul class="card__share-popover-list">
+                    <li>
+                      <a
+                        class="card__share-popover-link"
+                        href="#"
+                        aria-label="Share on Facebook"
+                      >
+                        <img
+                          src="./images/icon-facebook.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="card__share-popover-link"
+                        href="#"
+                        aria-label="Share on Twitter"
+                      >
+                        <img
+                          src="./images/icon-twitter.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="card__share-popover-link"
+                        href="#"
+                        aria-label="Share on Pinterest"
+                      >
+                        <img
+                          src="./images/icon-pinterest.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  class="card__share-popover-close"
+                  aria-label="Close share options"
+                  aria-controls="share-toast"
+                  aria-expanded="true"
+                >
+                  <img
+                    class="card__share-icon"
+                    src="./images/icon-share.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </button>
+              </div>
+            </section>
+          </footer>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

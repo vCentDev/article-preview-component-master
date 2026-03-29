@@ -1,0 +1,176 @@
+:root {
+  /* COLORS */
+  --color-grey-900: hsl(217, 19%, 35%);
+  --color-grey-500: hsl(214, 17%, 51%);
+  --color-grey-400: hsl(212, 23%, 69%);
+  --color-grey-200: hsl(210, 46%, 95%);
+  --color-white: hsl(0, 100%, 100%);
+
+  /* TYPOGRAPHY */
+  --font-primary: "Manrope", system-ui, sans-serif;
+
+  --text-base: 0.813rem;
+  --text-lg: 1.3rem;
+
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --line-height-base: 1.4;
+  --line-height-tight: 1.3;
+
+  /* SPACING */
+  --space-0: 0;
+  --space-8px: 0.5rem;
+  --space-16px: 1rem;
+  --space-24px: 1.5rem;
+  --space-32px: 2rem;
+  --space-40px: 2.5rem;
+  --space-48px: 3rem;
+  --space-56px: 3.5rem;
+  --space-64px: 4rem;
+  --space-104px: 6.5rem;
+  --space-160px: 10rem;
+
+  /* BREAK POINTS */
+  --breakpoint-tablet: 48em;
+  --breakpoint-desktop: 90em;
+}
+
+/*---- FONTS & TEXT PRESETS ----*/
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.text--preset-1 {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: 0.25px;
+  color: var(--color-grey-900);
+}
+
+.text--preset-2 {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  line-height: var(--line-height-base);
+  letter-spacing: 0.12%;
+  color: var(--color-grey-500);
+}
+
+.text--preset-2-bold {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-base);
+  letter-spacing: 0.12%;
+  color: var(--color-grey-900);
+}
+
+.text--preset-3 {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  line-height: var(--line-height-base);
+  letter-spacing: 0.25%;
+  color: var(--color-grey-400);
+}
+
+/* --------------- Reset & Base Styles --------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: var(--space-32px) var(--space-16px);
+  background-color: var(--color-grey-200);
+}
+
+/* --------------- Components --------------- */
+/* Card */
+.card {
+  min-width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-32px);
+  overflow: hidden;
+
+  border: 1px solid #979797;
+  border-radius: var(--space-8px);
+  background-color: var(--color-white);
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-48px);
+}
+
+.card__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24px);
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  margin-block-end: var(--space-16px);
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16px);
+}
+
+.card__profile-avatar {
+  width: var(--space-40px);
+  height: var(--space-40px);
+  border-radius: 50%;
+}
+
+.card__profile-date {
+  color: var(--color-grey-400);
+}
+
+.card__share-toggle {
+  width: var(--space-32px);
+  height: var(--space-32px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card__share-icon {
+  color: var(--color-grey-500);
+}
