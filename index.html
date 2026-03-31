@@ -17,11 +17,13 @@
   <body class="text--preset-2">
     <main class="page-wrapper">
       <article class="card">
-        <img
-          class="card__image"
-          src="./images/drawers.jpg"
-          alt="Green drawers with a decorative vase"
-        />
+        <div class="card__image-container">
+          <img
+            class="card__image"
+            src="./images/drawers.jpg"
+            alt="Green drawers with a decorative vase"
+          />
+        </div>
 
         <div class="card__content">
           <div class="card__text-block">
@@ -43,7 +45,7 @@
                 src="./images/avatar-michelle.jpg"
                 alt="Michelle Appleton"
               />
-              <address class="card__profile-data">
+              <address class="card__profile-meta">
                 <p class="card__profile-name text--preset-2-bold">
                   Michelle Appleton
                 </p>
@@ -66,10 +68,10 @@
                 aria-hidden="true"
               />
             </button>
-
-            <!-- SHARE TOAST -->
           </footer>
         </div>
+
+        <!-- SHARE TOAST -->
         <section
           id="share-toast"
           class="card__share-popover"
