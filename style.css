@@ -192,8 +192,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--space-16px) var(--space-32px);
+  padding: var(--space-32px);
+  border-radius: 0 0 8px 8px;
   background-color: var(--color-grey-900);
+}
+
+.card__share-popover.is-open {
+  display: flex;
 }
 
 .card__share-popover-content {
@@ -253,7 +258,7 @@ body {
   .card__share-popover {
     width: 248px;
     height: 67px;
-    display: flex;
+    display: none;
     bottom: 90px;
     right: -75px;
     border-radius: 10px;

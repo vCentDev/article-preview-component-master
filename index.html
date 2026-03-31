@@ -11,6 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
 
@@ -56,6 +57,7 @@
             </div>
             <button
               type="button"
+              id="share-button"
               class="card__share-toggle"
               aria-label="Share article"
               aria-controls="share-toast"
@@ -71,9 +73,9 @@
           </footer>
         </div>
 
-        <!-- SHARE TOAST -->
+        <!-- SHARE POPOVER -->
         <section
-          id="share-toast"
+          id="share-popover"
           class="card__share-popover"
           aria-label="Share options"
         >
@@ -82,53 +84,14 @@
               <span class="card__share-popover-label text--preset-3"
                 >SHARE</span
               >
-              <ul class="card__share-popover-list">
-                <li>
-                  <a
-                    class="card__share-popover-link"
-                    href="#"
-                    aria-label="Share on Facebook"
-                  >
-                    <img
-                      src="./images/icon-facebook.svg"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="card__share-popover-link"
-                    href="#"
-                    aria-label="Share on Twitter"
-                  >
-                    <img
-                      src="./images/icon-twitter.svg"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="card__share-popover-link"
-                    href="#"
-                    aria-label="Share on Pinterest"
-                  >
-                    <img
-                      src="./images/icon-pinterest.svg"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <ul id="link-list" class="card__share-popover-list"></ul>
             </div>
             <button
               type="button"
+              id="share-button-close"
               class="card__share-popover-close"
               aria-label="Close share options"
-              aria-controls="share-toast"
+              aria-controls="share-popover"
               aria-expanded="true"
             >
               <img
